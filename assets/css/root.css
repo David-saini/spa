@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --ff-poppins: "poppins";
+
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 20px;
+    --fs-xl: 45px;
+    --fs-45: 45px;
+
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-dark: 900;
+}
+
+.ff-Poppins {
+    font-family: var(--ff-poppins);
+}
+
+.fs-16px {
+    font-size: var(--fs-sm);
+}
+
+.fs-18px {
+    font-size: var(--fs-md);
+}
+
+.fs-20px {
+    font-size: var(--fs-lg);
+}
+
+.fs-45px {
+    font-size: var(--fs-xl);
+}
+
+.fs-45 {
+    font-size: var(--fs-45);
+}
+
+@media (max-width:992px) {
+    :root {
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 20px;
+        --fs-xl: 40px;
+        --fs-45: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    :root {
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 20px;
+        --fs-xl: 38px;
+        --fs-45: 36px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 16px;
+        --fs-xl: 36px;
+        --fs-45: 28px;
+    }
+}

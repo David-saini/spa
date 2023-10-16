@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spa</title>
+    <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta name="description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="og:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="twitter:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="./assets/Images/WEBP/Pot_1.webp">
+    <link rel="stylesheet" href="./assets/js/style.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/Style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="icon" href="./assets/Images/webp/footer_logo.webp">
+
+</head>
+
+<body class="overflow-hidden">
+
+    <div id="preloader" class="overflow-hidden">
+        <div id="preloader_bg" class="d-flex align-items-center justify-content-center">
+            <img class="preloader_img" src="./assets/Images/webp/footer_logo.webp" alt="Yoomi_logo">
+        </div>
+    </div>
+    <section class="header_bg position-relative overflow-hidden">
+        <div class="my_container">
+            <div class="py-4 d-flex justify-content-between align-items-center">
+                <img class="max_w_120px" src="./assets/Images/webp/header_logo.webp" alt="header_logo">
+                <ul class="mb-0 ps-0 d-lg-flex gap-4 text-white d-none d-lg-block d-none">
+                    <li><a href="#services" class="text_white ff-Poppins fw-normal opacity fs-18px">Services Us</a></li>
+                    <li><a href="#Benefits" class="text_white ff-Poppins fw-normal opacity fs-18px">Benefits</a></li>
+                    <li><a href="#Contact_us" class="text_white ff-Poppins fw-normal opacity fs-18px">Why Choose US</a>
+                    </li>
+                    <li><a href="#FAQs" class="ff-Poppins text_white fw-normal opacity fs-18px">FAQs</a></li>
+                </ul>
+
+                <button class="submit_btn d-lg-block d-none ff-Poppins fw-medium fs-18px">Contact us</button>
+
+                <button id="openNav" onclick="openNav()" class="menu d-lg-none" type="button">&#9776</button>
+                <div id="Menu" class="d-lg-none navbar1 d-flex justify-content-center align-items-center text-center">
+                    <button class="menu position-absolute closbtn" onclick="closeNav()" type="button">&times;</button>
+                    <ul class="mb-0 ps-0 d-flex flex-column gap-4 text-white">
+                        <li onclick="closeNav()"><a href="#services"
+                                class="ff-Poppins text_white fw-normal fs-18px">Services
+                                Us</a></li>
+                        <li onclick="closeNav()"><a href="#Benefits"
+                                class="ff-Poppins text_white fw-normal fs-18px">Benefits</a>
+                        </li>
+                        <li onclick="closeNav()"><a href="#Contact_us"
+                                class="ff-Poppins text_white fw-normal fs-18px">Why
+                                Choose US</a>
+                        </li>
+                        <li onclick="closeNav()"><a href="#FAQs"
+                                class="ff-Poppins text_white fw-normal fs-18px">FAQs</a></li>
+                        <button class="submit_btn d-block d-lg-none ff-Poppins fw-medium fs-18px"
+                            onclick="closeNav()">Contact
+                            us</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <span>
+            <img class="d-block d-md-none header_left" src="./assets/Images/webp/header_left.png" alt="header_left">
+            <img class="opacity-25 header_left_1 d-none d-md-block" src="./assets/Images/webp/slider_background_1.png"
+                alt="slider_background_1">
+            <img class="opacity-25 header_left_2 d-none d-md-block" src="./assets/Images/webp/slider_background.png"
+                alt="">
+            <img class="opacity-25 header_right_1 d-none d-md-block" src="./assets/Images/webp/slider_background_1.png"
+                alt="">
+            <img class="opacity-25 header_right_2 d-none d-md-block" src="./assets/Images/webp/slider_background.png"
+                alt="">
+        </span>
+
+        <div class="my_container">
+            <div class="text-center pt-sm-5">
+                <h1 class="text-white ff-Poppins fs_45px fw-semibold pt-4 mt-sm-3">Simplifying <span
+                        class="fw-normal italic">Laptop Refresh</span>
+                    <span class="d-md-block">Deployments for Organizations</span>
+                </h1>
+                <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"
+                    class="text-white ff-poppins fs-20px fw-normal pt-3 mt-1 m-0 pb-sm-5 pb-4">Revolutionizing the Way
+                    You
+                    Manage
+                    Laptop Refresh Projects</p>
+                <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
+                    <img class="dasboard_img w-100" src="./assets/Images/webp/Dashboard.webp" alt="dasboard">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature -->
+    <section class="overflow-hidden py-md-5 pt-5 pt-md-0 my-md-5 position-relative" id="Benefits">
+        <img class="slider_background" src="./assets/Images/webp/slider_background.png" alt="slider_background">
+        <img class="slider_background_1" src="./assets/Images/webp/slider_background_1.png" alt="slider_background">
+        <div class="mb-0" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300" data-aos-easing="linear">
+            <p class="mb-0 d-flex align-items-center justify-content-center ff-Poppins fw-semibold fs-45">Features
+                &<span class="fw-light italic ps-1">Benefits</span></p>
+        </div>
+        <div class="my_container position-relative">
+
+            <div class="slick-prev d-lg-none d-block">
+                <svg class="fill position-relative z-3" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.875 7.75L11.125 14.5L17.875 21.25" stroke="#646060" stroke-width="2.25"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="0.5" y="0.5" width="29" height="29" rx="3.5" stroke="#646060" />
+                </svg>
+            </div>
+            <div class="slick-next d-lg-none d-block">
+                <svg class="fill" width="31" height="30" viewBox="0 0 31 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.625 21.25L18.375 14.5L11.625 7.75" stroke="#646060" stroke-width="2.25"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="1" y="0.5" width="29" height="29" rx="3.5" stroke="#646060" />
+                </svg>
+
+            </div>
+
+            <div class="slider_1 pb-5">
+                <div class="py-5 px-1 d-flex align-items-center justify-content-center">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300"
+                        data-aos-easing="linear">
+                        <div class="d-flex align-items-center justify-content-center mb-3">
+                            <span class="uper_notification d-flex align-items-center justify-content-center">
+                                <p class="mb-0 ff-Poppins fs-18px fw-semibold text-white px-5 py-3">Employee Portal</p>
+                            </span>
+                        </div>
+
+                        <div class="px-4 mt-4 position-relative">
+                            <img src="./assets/Images/webp/dotted_line.png" alt="dotted_line">
+
+                            <img class="content_1 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_1 px-4 pt-1">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">User-Friendly Signup:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Employees easily
+                                        indicate
+                                        their preference for a new
+                                        laptop.</p>
+                                </div>
+                            </div>
+
+
+                            <img class="content_2 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_2 pt-1 px-4">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Seamless Communication:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Automated
+                                        notifications keep
+                                        employees informed from request to exchange.</p>
+                                </div>
+                            </div>
+
+                            <img class="content_3 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_3 px-4">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Flexible Scheduling:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Convenient
+                                        appointment
+                                        scheduling and rescheduling rightfrom the portal.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="py-5 px-1 d-flex align-items-center justify-content-center">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300"
+                        data-aos-easing="linear">
+                        <div class="d-flex align-items-center justify-content-center mb-3">
+                            <span class="uper_notification d-flex align-items-center justify-content-center">
+                                <p class="mb-0 ff-Poppins fs-18px fw-semibold text-white px-4 py-3 mx-2">Engineer
+                                    Dashboard
+                                </p>
+                            </span>
+                        </div>
+
+                        <div class="px-4 mt-4 position-relative">
+                            <img src="./assets/Images/webp/dotted_line.png" alt="dotted_line">
+
+                            <img class="content_1 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_1 px-4 pt-1">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Daily Handover Insights:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">View all laptop
+                                        handover appointments for the day at a glance.</p>
+                                </div>
+                            </div>
+
+
+                            <img class="content_2 pt-2 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_2 pt-3 px-4">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Efficient Management:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Update laptop serial
+                                        numbers manually, label exchanges, and track noshows.</p>
+                                </div>
+                            </div>
+
+                            <img class="content_3 pt-3 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_3 pt-4 px-4">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Full Office Visibility:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Monitor all
+                                        appointments for the office, regardless of the date.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="py-5 px-1 d-flex align-items-center justify-content-center">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300"
+                        data-aos-easing="linear">
+                        <div class="d-flex align-items-center justify-content-center mb-3">
+                            <span class="uper_notification d-flex align-items-center justify-content-center">
+                                <p class="mb-0 ff-Poppins fs-18px fw-semibold text-white px-3 py-3">Stakeholder
+                                    Dashboard</p>
+                            </span>
+                        </div>
+
+                        <div class="px-4 mt-4 position-relative">
+                            <img src="./assets/Images/webp/dotted_line.png" alt="dotted_line">
+
+                            <img class="content_1 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_1 px-4 pt-1">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Deployment Overview:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Stay updated with
+                                        holistic and individual office performance metrics.</p>
+                                </div>
+                            </div>
+
+
+                            <img class="content_2 pt-3 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_2 pt-4 px-4">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Employee Tracking:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Identify completed
+                                        exchanges
+                                        and no-shows, making escalations swift and easy</p>
+                                </div>
+                            </div>
+
+                            <img class="content_3 pt-3 start-0" src="./assets/Images/webp/dot.png" alt="">
+
+                            <div class="content_3 pt-4 px-4">
+                                <div class="mb-0">
+                                    <p class="mb-0 ff-Poppins black fw-medium fs-16px">Deployment Calendar:</p>
+                                    <p class="mb-0 ff-Poppins black opacity-75 fw-normal fs-16px">Get a clear picture of
+                                        current and upcoming deployments by office.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- About spa -->
+    <section class="overflow-hidden py-md-5 my-5 bg_grey" id="Contact_us">
+        <div class="my_container py-5 my-md-4 mb-5">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300"
+                    data-aos-easing="linear">
+                    <h1 class="ff-Poppins fw-semibold fs-45px text-center text-md-start">About <span
+                            class="italic fw-normal">SPA</span>
+                    </h1>
+                    <p class="mb-0 ff-Poppins opacity-75 pt-2 fs-16px text-center text-md-start">Dui nulla duis
+                        tristique eu sed sit in ut. Dictum
+                        felis commodo eu nulla. Adipiscing sed eu nisi justo id pharetra
+                        rutrum. Morbi nisi facilisi senectus pulvinar in enim feugiat eros tortor. Eget senectus tellus
+                        nunc vulputate volutpat.</p>
+                    <p class="mb-0 ff-Poppins opacity-75 pt-md-2 pt-3 fs-16px text-center text-md-start">Laoreet
+                        pellentesque
+                        augue ipsum urna potenti
+                        elementum. Tincidunt ipsum at suspendisse posuere scelerisque sit elit.
+                        Cras tellus id odio amet pellentesque arcu.</p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start pt-3 pt-md-0">
+                        <button class="btn_2 mt-3 ff-Poppins fs-18px fw-medium">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-10 position-relative pt-5 pt-md-0" data-aos="zoom-in"
+                    data-aos-duration="500" data-aos-delay="300" data-aos-easing="linear">
+                    <img class="vector_1" src="./assets/Images/webp/Vector.webp" alt="Vector">
+                    <img class="w-100 position-relative z-1" src="./assets/Images/webp/Macbook_img.webp"
+                        alt="Macbook_img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- choose spa -->
+    <section class="overflow-hidden py-md-5 my-md-3" id="FAQs">
+        <div class="py-md-5 my_container my-5">
+            <h1 class="d-flex align-items-center justify-content-center ff-Poppins fw-semibold fs-45 pb-5"
+                data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300" data-aos-easing="linear">Why Choose
+                <span class="italic fw-normal ps-2">SPA?</span>
+            </h1>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <div class="d-flex gap-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300"
+                        data-aos-easing="linear">
+                        <img class="d-block d-md-none w-60px" src="./assets/Images/webp/comprensive.webp" alt="">
+                        <div class="d-flex flex-column">
+                            <p class="mb-0 ff-Poppins fs-16px fw-medium text-md-end px-lg-4">Comprehensive
+                                Solution</p>
+                            <p class="mb-0 ff-Poppins fs-16px fw-normal opacity-75 text-md-end px-lg-4 pt-2">
+                                SPA handles
+                                every
+                                aspect
+                                of
+                                your
+                                laptop
+                                refresh
+                                project,
+                                eliminating the
+                                need for
+                                multiple tools and manual interventions.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300"
+                        data-aos-easing="linear">
+                        <img class="d-block d-md-none w-60px mt-4" src="./assets/Images/webp/text-img.webp" alt="">
+                        <div class="d-flex flex-column">
+                            <p class="mb-0 ff-Poppins fs-16px fw-medium text-md-end pt-md-5 pt-4 px-lg-4">Improved
+                                Accountability:
+                            </p>
+                            <p class="mb-0 ff-Poppins fs-16px fw-normal opacity-75 text-md-end px-lg-4 pt-2">
+                                With SPA,
+                                stakeholders
+                                and
+                                office managers have access to real-time data, ensuring that every employee exchange is
+                                accounted for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 position-relative">
+                    <img class="w-60px comprensive pe-2 d-md-block d-none" src="./assets/Images/webp/comprensive.webp"
+                        alt="comprensive" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"
+                        data-aos-easing="linear">
+                    <img class="w-60px text-img pe-2 d-md-block d-none" src="./assets/Images/webp/text-img.webp"
+                        alt="text-img" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"
+                        data-aos-easing="linear">
+                    <img class="w-60px clock pe-2 d-md-block d-none" src="./assets/Images/webp/clock.webp"
+                        alt="comprensive" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"
+                        data-aos-easing="linear">
+                    <img class="w-60px msg pe-2 d-md-block d-none" src="./assets/Images/webp/msg.webp" alt="comprensive"
+                        data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300" data-aos-easing="linear">
+
+                    <img class="left_timeline d-lg-block d-none" src="./assets/Images/webp/left_timeline.png"
+                        alt="left_timeline" data-aos="fade-left" data-aos-duration="700" data-aos-delay="300"
+                        data-aos-easing="linear">
+                    <img class="right_timeline d-lg-block d-none" src="./assets/Images/webp/right_timeline.png"
+                        alt="left_timeline" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300"
+                        data-aos-easing="linear">
+                    <span class="d-flex align-items-center justify-content-center" data-aos="zoom-in"
+                        data-aos-duration="500" data-aos-delay="300" data-aos-easing="linear"><img
+                            class="max-w-160px d-md-block d-none" src="./assets/Images/webp/choose_circle_img.webp"
+                            alt="choose_circle_img"></span>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="d-flex gap-3 pt-4 pt-md-0" data-aos="fade-left" data-aos-duration="500"
+                        data-aos-delay="300" data-aos-easing="linear">
+                        <img class="d-block d-md-none w-60px" src="./assets/Images/webp/clock.webp" alt="">
+                        <div class="px-md-4 d-flex flex-column">
+                            <p class="mb-0 ff-Poppins fs-16px fw-medium">Time & Cost Efficiency</p>
+                            <p class="mb-0 ff-Poppins fs-16px fw-normal opacity-75 pb-4">Automated processes mean less
+                                manual work, leading to faster deployments and cost savings.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex pt-3 pt-md-0 gap-3" data-aos="fade-left" data-aos-duration="500"
+                        data-aos-delay="300" data-aos-easing="linear">
+                        <img class="d-block d-md-none w-60px" src="./assets/Images/webp/msg.webp" alt="">
+                        <div class="px-md-4 d-flex flex-column">
+                            <p class="mb-0 ff-Poppins fs-16px fw-medium pt-md-5">Enhanced Communication</p>
+                            <p class="mb-0 ff-Poppins fs-16px fw-normal pt-2 opacity-75">Whether it's rescheduling,
+                                reminders, or updates, SPA ensures everyone is on the same page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- promo-video -->
+    <section class="overflow-hidden py-md-5 my-5 position-relative">
+        <img class="side_img" src="./assets/Images/webp/promo_sec_img.webp" alt="promo_sec_img">
+        <p class="mb-0 ff-Poppins fs-45 fw-semibold d-flex align-items-center justify-content-center">
+            Watch Promo
+            <span class="italic fw-normal">Video</span>
+        </p>
+
+        <div class="my_container mb-5">
+            <div
+                class="d-flex align-items-center justify-content-center cursor_pointer pt-md-5 pt-sm-4 pt-2 position-relative overflow-hidden">
+                <img class="w-100 mx-sm-5 px-sm-5 mt-3" src="./assets/Images/webp/promo-img.webp" alt="promo">
+                <a href="https://www.youtube.com/watch?v=-N_mqEDghDA&t=1s"><img class="icon"
+                        src="./assets/Images/webp/play_icon.webp" alt="play_icon"></a>
+            </div>
+        </div>
+    </section>
+    <!-- streamlined -->
+    <section class="overflow-hidden py-5 bg_grey">
+        <div class="my_container py-md-5 my-4">
+            <div class="row flex-column-reverse flex-md-row align-items-center justify-content-center">
+
+                <div class="col-md-6 col-sm-10 position-relative pt-5 pt-md-0" data-aos="zoom-in"
+                    data-aos-duration="500" data-aos-delay="300" data-aos-easing="linear">
+                    <img class="vector" src="./assets/Images/webp/Vector.webp" alt="Vector">
+                    <img class="w-100 pt-4 pt-md-0 position-relative z-1" src="./assets/Images/webp/Macbook_img_2.webp"
+                        alt="Macbook_img_2">
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300"
+                    data-aos-easing="linear">
+                    <h1 class="ff-Poppins fw-semibold fs-45 text-center text-md-start">Your Partner in Streamlined
+                        Laptop <span class="italic fw-normal text-center text-md-start">Refresh
+                            Deployments</span>
+                    </h1>
+                    <p class="mb-0 ff-Poppins opacity-75 pt-2 fs-16px text-center text-md-start">Equip your organization
+                        with the best. Experience
+                        hassle-free
+                        management
+                        and
+                        stakeholder satisfaction with SPA.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="overflow-hidden pt-md-5 pb-4 position-relative">
+        <img class="footer_line w-100" src="./assets/Images/webp/footer_line.webp" alt="footer_line">
+        <img class="footer_left_img" src="./assets/Images/webp/footer_left_img.webp" alt="footer_left_img.webp">
+        <img class="position-absolute end-0 bottom-0" src="./assets/Images/webp/footer_right_img.webp"
+            alt="footer_right_img.webp">
+        <div class="my_container pt-5 mt-5">
+            <div class="row">
+
+                <div class="col-lg-4 col_sm_6">
+                    <span class="d-flex align-items-center justify-content-center justify-content-sm-start"><img
+                            class="max_w_153px" src="./assets/Images/webp/footer_logo.webp" alt="footer_logo"></span>
+                    <div
+                        class="d-flex align-items-center justify-content-center justify-content-sm-start text-center text-sm-start">
+                        <p class="mb-0 opacity-75 max_w_336px ff-Poppins fs-16px fw-normal pt-3">Equip your organization
+                            with the
+                            best. Experience
+                            hassle-free
+                            management
+                            and
+                            stakeholder satisfaction with SPA.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-4 py-5 order-lg-1 order-2 py-lg-0 d-flex justify-content-lg-end justify-content-center">
+                    <div class="footer_box">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex flex-column">
+                                <label for="fname" class="text-white ff-Poppins fw-normal fs-16px pb-1">First
+                                    Name</label>
+                                <input type="text" class="ps-1 input text-white">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="fname" class="text-white ff-Poppins fw-normal fs-16px pb-1">Last
+                                    Name</label>
+                                <input type="text" class="ps-1 input text-white">
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column pt-3">
+                            <label for="fname" class="text-white ff-Poppins fw-normal fs-16px pb-1">Email</label>
+                            <input type="email" class="ps-1 input_2 text-white">
+                        </div>
+
+                        <button class="submit_btn mb-0 mt-3 ff-Poppins fs-16px fw-medium">Submit</button>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col_sm_6 order-lg-2 order-1 pt_5">
+                    <div class="d-flex justify-content-center text-nowrap gap-2">
+
+                        <ul class="mb-0 ps-0 justify-content-center">
+                            <li class="ff-Poppins fs-18px fw-semibold">Links</li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#"
+                                    class="black opacity-75">Assignment</a></li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#" class="black opacity-75">Product
+                                    Package</a>
+                            </li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#"
+                                    class="black opacity-75">Journey</a></li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#" class="black opacity-75">Contact
+                                    Us</a></li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#"
+                                    class="black opacity-75">Programs</a></li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#" class="black opacity-75">Terms of
+                                    Service</a>
+                            </li>
+                        </ul>
+
+                        <ul class="mb-0">
+                            <li class="ff-Poppins fs-18px fw-semibold">Other Links</li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#" class="black opacity-75">Privacy
+                                    Policy</a>
+                            </li>
+                            <li class="ff-Poppins fs-16px fw-normal pt-2"><a href="#" class="black opacity-75">Terms of
+                                    Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p class="mb-0 pt-lg-5 d-flex align-items-center justify-content-center mt-lg-5">© 2023 SPA All rights reserved
+        </p>
+    </footer>
+
+    <a id="button"></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/style.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</body>
+
+</html>
